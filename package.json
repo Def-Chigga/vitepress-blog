@@ -1,0 +1,33 @@
+{
+  "name": "vitepress-blog",
+  "description": "使用 Vitepress 搭建的博客站点",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "DefChigga",
+    "email": "defchigga@qq.com"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "format": "prettier --write . --ignore-unknown"
+  },
+  "dependencies": {
+    "vitepress-theme-async": "latest"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "@types/culori": "^4.0.1",
+    "@types/node": "^25.0.9",
+    "prettier": "3.8.0",
+    "terser": "^5.46.0",
+    "typescript": "^5.1.6",
+    "vite": "^7.3.1",
+    "vitepress": "^1.1.0"
+  }
+}
