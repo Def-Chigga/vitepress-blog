@@ -228,8 +228,8 @@ export default defineConfig({
     },
     categorieCard: {
       enable: true,
-      len: 2,
-      list: [/*'Git', 'AI', */ '前端', '后端' /*'数据库', '运维', '工具', '其它'*/],
+      len: 4,
+      list: ['Git', 'AI', '前端', '后端', '数据库', '运维', '工具', '其它'],
     },
     search: {
       provider: 'local',
