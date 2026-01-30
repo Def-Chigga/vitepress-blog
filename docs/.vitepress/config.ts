@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress-theme-async/config'
 import pkg from '../../package.json' with { type: 'json' }
 
 const author = pkg.author.name
-const base = '/vitepress-blog/'
+const ASSET_BASE_URL = '/vitepress-blog/'
 
 /**
  * 获取实际年龄
@@ -28,7 +28,7 @@ function getAge(year: number, month: number, day: number) {
 }
 
 export default defineConfig({
-  base, // 站点将部署到的 base URL
+  base: '/', // 站点将部署到的 base URL
   srcDir: './',
   lang: 'zh',
   cleanUrls: true,
@@ -127,7 +127,7 @@ export default defineConfig({
     },
     banner: {
       type: 'video', // 'img' | 'video'
-      bgurl: `${base}banner-video.mp4`,
+      bgurl: `${ASSET_BASE_URL}/banner-video.mp4`,
       bannerTitle: 'Hello word',
       bannerText: 'Hi my new friend!',
       // ...
