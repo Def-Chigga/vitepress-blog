@@ -2,7 +2,6 @@ import { defineConfig } from 'vitepress-theme-async/config'
 import pkg from '../../package.json' with { type: 'json' }
 
 const author = pkg.author.name
-const ASSET_BASE_URL = '/vitepress-blog/'
 
 /**
  * 获取实际年龄
@@ -127,7 +126,7 @@ export default defineConfig({
     },
     banner: {
       type: 'video', // 'img' | 'video'
-      bgurl: `${ASSET_BASE_URL}/banner-video.mp4`,
+      bgurl: '/banner-video.mp4',
       bannerTitle: 'Hello word',
       bannerText: 'Hi my new friend!',
       // ...
